@@ -1,0 +1,34 @@
+{
+  "name": "vite-template-solid",
+  "version": "0.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "start-all": "concurrently \"vite\" \"node server/app.js\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d buid"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "solid-devtools": "^0.27.3",
+    "vite": "^4.3.9",
+    "vite-plugin-solid": "^2.7.0"
+  },
+  "dependencies": {
+    "@solidjs/router": "^0.8.3",
+    "axios": "^1.5.1",
+    "bcryptjs": "^2.4.3",
+    "concurrently": "^8.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "mongodb": "^6.1.0",
+    "solid-js": "^1.7.6",
+    "xss": "^1.0.14"
+  }
+}
