@@ -11,7 +11,7 @@
     "serve": "vite preview",
     "start-all": "concurrently \"vite\" \"node server/app.js\"",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d src"
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "license": "MIT",
   "devDependencies": {
