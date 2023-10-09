@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="shortcut icon" type="image/ico" href="/src/assets/favicon.ico" />
-    <title>Solid App</title>
-    <a href="/deliverables">Deliverables</a>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-
-    <script src="/src/index.jsx" type="module"></script>
-  </body>
+  <h1>Deliverables</h1>
+  <script>
+    function getDeliverables(){
+      fetch('https://cs-423-server.vercel.app/getDeliverables')
+        .then(response => response.json())
+        .then(data => createList(data))
+    }
+    function createList(data) {
+    const mainList = document.createElement('ol');
+    for (let i = 0; i < data.length; i++) {
+      const list = document.createElement('li');
+      list.innerText = JSON.stringify(data[i]);
+      mainList.appendChild(list);
+    }
+    document.body.appendChild(mainList);
+  }
+  getDeliverables()
+  </script>
 </html>
