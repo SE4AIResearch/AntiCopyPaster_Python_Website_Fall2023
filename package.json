@@ -1,5 +1,5 @@
 {
-  "name": "vite-template-solid",
+  "name": "senior-design-frontend",
   "version": "0.0.0",
   "description": "",
   "type": "module",
@@ -24,7 +24,6 @@
     "@solidjs/router": "^0.8.3",
     "axios": "^1.5.1",
     "concurrently": "^8.2.1",
-    "mongodb": "^6.1.0",
     "solid-js": "^1.7.6",
     "xss": "^1.0.14"
   }
