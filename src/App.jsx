@@ -2,8 +2,6 @@ import styles from './App.module.css';
 import { createSignal, createEffect } from 'solid-js';
 import {Router, Route, Routes, A} from "@solidjs/router"
 import Homepage from './pages/homepage';
-import Signup from './pages/signup';
-import Login from './pages/login';
 import Deliverables from './pages/deliverables';
 
 function App() {
