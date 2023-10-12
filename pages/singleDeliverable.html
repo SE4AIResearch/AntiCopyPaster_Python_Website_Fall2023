@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AntiCopyPaster Fall 2023</title>
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="../index.html" class="active">Home</a>
+            <a href="resources.html">Resources</a>
+            <a href="documentation.html">Documentation</a>
+            <a href="timeTracking.html">Time Tracking</a>
+            <a href="about.html">About</a>
+        </div>
+        <script>
+            let id=window.location.search.split('=')[1]
+            function getOneDeliverable(id){
+                fetch('https://cs-423-server.vercel.app/getDeliverables/'+id)
+                    .then(response => response.json())
+                    .then(deliv => showDeliv(deliv))
+            }
+            function showDeliv(deliverable){
+                const header = document.createElement('h1')
+                header.innerText=deliverable.name
+                document.body.appendChild(header)
+                for(let item in deliverable){
+                    let part = document.createElement('h2')
+                    part.innerText=item+": "
+                    document.body.appendChild(part)
+                    let value = document.createElement('p')
+                    value.innerText=JSON.stringify(deliverable[item])
+                    document.body.appendChild(value)
+                }    
+            }
+
+            getOneDeliverable(id)
+        </script>
+    </body>
+</html>

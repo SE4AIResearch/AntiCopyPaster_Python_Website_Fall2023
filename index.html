@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <title>AntiCopyPaster Fall 2023</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
   </head>
   <body>
     <div class="navigation">
@@ -16,8 +17,24 @@
       function getDeliverables(){
         fetch('https://cs-423-server.vercel.app/getDeliverables')
           .then(response => response.json())
-          .then(data => createList(data))
+          .then(data => handleDeliverables(data))
         }
+      function handleDeliverables(delivs){
+        const mainList = document.createElement('ol');
+        for(let d of delivs){
+          let listItem = document.createElement('li');
+          listItem.innerHTML=`<h2><a href="pages/singleDeliverable.html?id=${d._id.toString()}">${d.name}</a></h2>` 
+          mainList.appendChild(listItem)
+          for(let key in d){
+            let value = document.createElement('p')
+            value.innerHTML=`<strong>${key}: </strong>${JSON.stringify(d[key])}`
+    
+            mainList.appendChild(value)
+
+          }
+        }
+        document.body.appendChild(mainList)
+      }
       function createList(data) {
         const mainList = document.createElement('ol');
         for (let i = 0; i < data.length; i++) {
