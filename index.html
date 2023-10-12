@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <h1>Deliverables</h1>
-  <script>
-    function getDeliverables(){
-      fetch('https://cs-423-server.vercel.app/getDeliverables')
-        .then(response => response.json())
-        .then(data => createList(data))
-    }
-    function createList(data) {
-    const mainList = document.createElement('ol');
-    for (let i = 0; i < data.length; i++) {
-      const list = document.createElement('li');
-      list.innerText = JSON.stringify(data[i]);
-      mainList.appendChild(list);
-    }
-    document.body.appendChild(mainList);
-  }
-  getDeliverables()
-  </script>
+  <head>
+    <title>AntiCopyPaster Fall 2023</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <a href="./index.html" class="active">Home</a>
+      <a href="pages/resources.html">Resources</a>
+      <a href="pages/documentation.html">Documentation</a>
+      <a href="pages/timeTracking.html">Time Tracking</a>
+      <a href="pages/about.html">About</a>
+    </div>
+    <h1>Deliverables</h1>
+    <script>
+      function getDeliverables(){
+        fetch('https://cs-423-server.vercel.app/getDeliverables')
+          .then(response => response.json())
+          .then(data => createList(data))
+        }
+      function createList(data) {
+        const mainList = document.createElement('ol');
+        for (let i = 0; i < data.length; i++) {
+          const list = document.createElement('li');
+          list.innerText = JSON.stringify(data[i]);
+          mainList.appendChild(list);
+        }
+        document.body.appendChild(mainList);
+      }
+      getDeliverables()
+    </script>
+  </body>
+  
 </html>
