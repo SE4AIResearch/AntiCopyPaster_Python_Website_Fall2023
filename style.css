@@ -2,14 +2,24 @@
     background-color: rgb(30,50,70);
 }
 
-h1 {
+h1,h2,h3 {
     color:white;
 }
 
 p{
     color:white;
+    text-align: center;
 }
 
 li {
     color:white;
+}
+
+a{
+    color:green;
+}
+
+iframe.sheets {
+    width:500px;
+    height:300px;
 }
