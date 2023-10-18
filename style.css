@@ -14,7 +14,7 @@ li {
     color:white;
 }
 
-.sheets {
+iframe.sheets {
     width:500px;
-    background-color: blue;
+    height:300px;
 }
