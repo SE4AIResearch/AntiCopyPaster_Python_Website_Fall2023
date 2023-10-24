@@ -2,11 +2,6 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
-body {
-    max-width: 700px;
-    color: #444444;
-}
-
 .navigation {
     font-size:larger;
     overflow:hidden;
@@ -14,9 +9,17 @@ body {
     background: rgb(45, 45, 70)
 }
 
+body {
+    max-width: 700px;
+    margin: 40px auto;
+    color: #444444;
+}
+
+
+
 p{
     text-align: center;
-    margin: 40px auto;
+    
 
 }
 
