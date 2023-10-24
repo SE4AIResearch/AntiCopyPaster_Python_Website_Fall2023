@@ -2,15 +2,16 @@
     font-family:Arial, Helvetica, sans-serif;
 }
 
+body {
+    max-width: 700px;
+    margin: 40px auto;
+    color: #444444;
+}
+
 .navigation {
     font-size:larger;
     padding:30px;
     background: rgb(45, 45, 70)
-}
-
-body {
-    max-width: 700px;
-    color: #444444;
 }
 
 p{
