@@ -1,9 +1,15 @@
 :root {
     font-family:Arial, Helvetica, sans-serif;
 }
+
+.navigation {
+    font-size:larger;
+    padding:30px;
+    background: rgb(45, 45, 70)
+}
+
 body {
     max-width: 700px;
-    margin: 40px auto;
     color: #444444;
 }
 
@@ -12,7 +18,7 @@ p{
 
 }
 
-a{
+.headerlink{
     color:#EEEEEE;
 }
 
@@ -21,8 +27,4 @@ iframe.sheets {
     height:300px;
 }
 
-.navigation {
-    font-size:larger;
-    padding:30px;
-    background: rgb(45, 45, 70)
-}
+
