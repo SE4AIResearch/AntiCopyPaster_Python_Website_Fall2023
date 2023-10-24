@@ -1,13 +1,19 @@
 :root {
     font-family:Arial, Helvetica, sans-serif;
 }
+body {
+    max-width: 700px;
+    margin: 40px auto;
+    color: #444444;
+}
 
 p{
     text-align: center;
+
 }
 
 a{
-    color:white;
+    color:#EEEEEE;
 }
 
 iframe.sheets {
@@ -17,6 +23,6 @@ iframe.sheets {
 
 .navigation {
     font-size:larger;
-    padding:60px;
-    background-color: rgb(45, 45, 70)
+    padding:30px;
+    background: rgb(45, 45, 70)
 }
