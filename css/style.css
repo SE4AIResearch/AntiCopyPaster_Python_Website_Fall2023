@@ -16,3 +16,8 @@ iframe.sheets {
     width:500px;
     height:300px;
 }
+
+.navigation {
+    font-size:larger;
+    background-color: rgb(45, 45, 70)
+}
