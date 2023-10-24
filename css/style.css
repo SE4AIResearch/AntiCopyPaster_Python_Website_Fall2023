@@ -10,14 +10,14 @@
 }
 
 body {
-    max-width: 700px;
-    margin: 40px left right;
+    margin: 40px auto;
     color: #444444;
 }
 
 
 
 p{
+    max-width: 700px;
     text-align: center;
     
 
