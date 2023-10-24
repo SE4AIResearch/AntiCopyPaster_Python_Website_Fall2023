@@ -4,18 +4,19 @@
 
 body {
     max-width: 700px;
-    margin: 40px auto;
     color: #444444;
 }
 
 .navigation {
     font-size:larger;
-    padding:30px;
+    overflow:hidden;
+    padding:30px 10px;
     background: rgb(45, 45, 70)
 }
 
 p{
     text-align: center;
+    margin: 40px auto;
 
 }
 
@@ -23,7 +24,7 @@ p{
     color:#EEEEEE;
 }
 
-iframe.sheets {
+iframe {
     width:500px;
     height:300px;
 }
