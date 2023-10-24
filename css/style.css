@@ -9,14 +9,9 @@
     background: rgb(45, 45, 70)
 }
 
-body {
-    margin: 40px auto;
-    color: #444444;
-}
-
-
-
 p{
+    color: #444444;
+    margin: 40px auto;
     max-width: 700px;
     text-align: center;
     
