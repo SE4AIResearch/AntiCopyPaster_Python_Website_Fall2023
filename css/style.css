@@ -1,18 +1,11 @@
 :root {
     background-color: rgb(30,50,70);
-}
-
-h1,h2,h3 {
+    font-family:Arial, Helvetica, sans-serif;
     color:white;
 }
 
 p{
-    color:white;
     text-align: center;
-}
-
-li {
-    color:white;
 }
 
 a{
