@@ -31,7 +31,7 @@
 }
 
 iframe {
-    align-items:center;
+    display:block;
     width:500px;
     height:300px;
 }

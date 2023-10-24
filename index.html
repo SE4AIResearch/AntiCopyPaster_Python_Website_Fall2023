@@ -14,29 +14,28 @@
       <a href="pages/about.html" class="headerlink">About</a>
     </div>
     <h1 class="text">Anti Copy Paster (Python) Fall 2023 Research</h1>
-    <h3 class="text">This is the documentation site for our research to extend the functionality of PyCharm to include the AntiCopyPaster tool</h3>
+    <h3 class="text">This is the documentation site for our research to extend the functionality of PyCharm to include the AntiCopyPaster tool.</h3>
     <p class="text">
-      AntiCopyPaster is an open-source plugin for IntelliJ Idea that automatically detects copied and pasted code and suggests
-      extracting that duplicated code into its own method
-      <br> <br>
-      Our work is to bring this functionality as a plugin to IntelliJ PyCharm for Python
-      <br> <br>
+      AntiCopyPaster is an open-source plugin for IntelliJ IDEA that automatically detects copied and pasted code and suggests
+      extracting that duplicate code into its own method.
+      <br>
+      Our task is to port this plugin to IntelliJ PyCharm for Python.
+      <br>
       The goal of this project is to create a Python plugin which detects when the user copies and pastes 
-      a section of their own code and refactors the project to minimize repetition. 
-      So given a set of parameters, the plugin will determine if the pasted code should be flagged for 
-      refactoring, notify and give the user the option to approve refactoring and perform said refactoring. 
-      This will be achieved through studying and adapting an existing plugin for PyCharm called PyNose. 
-      This plugin can be used inside PyCharm to study the test smells of a certain project.
+      a section of their own code, and suggests refactoring to minimize repetition. 
+      Given a set of customizable parameters, the plugin will determine if the pasted code should be flagged for 
+      refactoring, notify and give the user the option to approve refactoring in a non-invasive manner, and finally execute said refactoring. 
+      <br>
+      A plugin with similar functionality called PyNose already exists within PyCharm, and we will use it as a basis for our project. 
+      PyNose can be used inside PyCharm to study the test smells of a certain project.
       When you open a project in PyCharm, a number of inspections will be available.
       <br>
-      One of the tools available is duplicate assert. This will underline duplicated assert statements
-      (two assert statements with the same parameters) with a warning.
-      We intend to use the duplication finder code to look for code that is duplicated throughout the entire file.
-      
-      <br> <br>
-      Alongside the plugin, the project involves the creation of a website which will 
-      function both as a repository for information on our project for the client to review, 
-      but also as a source of information for any later groups who wish to further iterate on our plugin.
+      One of the tools available is 'duplicate assert'. This will underline repeated assert statements
+      (two assert statements with the same parameters) and warn the user that this is bad coding practice.
+      We intend to use this duplication finder ultility to search for code that is copied and pasted throughout the entire file.
+      <br>
+      This website will function both as a repository for information on our project's progress for the client to review, 
+      and as a source of information for any later groups who wish to further iterate on our plugin.
     </p>
     <!-- <script>
       function getDeliverables(){
