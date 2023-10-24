@@ -1,7 +1,5 @@
 :root {
-    background-color: rgb(30,50,70);
     font-family:Arial, Helvetica, sans-serif;
-    color:white;
 }
 
 p{
@@ -9,7 +7,7 @@ p{
 }
 
 a{
-    color:green;
+    color:white;
 }
 
 iframe.sheets {
@@ -19,5 +17,6 @@ iframe.sheets {
 
 .navigation {
     font-size:larger;
+    padding:60px;
     background-color: rgb(45, 45, 70)
 }
