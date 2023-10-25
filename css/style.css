@@ -1,25 +1,41 @@
 :root {
-    background-color: rgb(30,50,70);
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-h1,h2,h3 {
-    color:white;
+.navigation {
+    font-size:larger;
+    overflow:hidden;
+    padding:30px 10px;
+    background: rgb(45, 45, 70)
 }
 
-p{
-    color:white;
+.text {
+    color: #444444;
+    margin: 40px auto;
+    max-width: 700px;
     text-align: center;
+    line-height: 150%;
 }
 
-li {
-    color:white;
+.resources {
+    padding: 0;
+    color:rgb(50, 100, 190);
+    list-style-type: none;
+    font-size: larger;
+    text-align: center;
+    margin: 40px auto;
+    line-height: 150%;
 }
 
-a{
-    color:green;
+.headerlink{
+    color:#EEEEEE;
 }
 
-iframe.sheets {
+iframe {
+    display:block;
+    margin: auto;
     width:500px;
     height:300px;
 }
+
+
