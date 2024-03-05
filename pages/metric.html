@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>AntiCopyPaster Fall 2023</title>
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="icon" type="image/png" href="../images/pycharm.png">
+    </head>
+    <body>
+        <div class="navigation">
+            <a href="../index.html" class="headerlink">Home</a>
+            <a href="resources.html" class="headerlink">Resources</a>
+            <a href="documentation.html" class="headerlink">Documentation</a>
+            <a href="timeTracking.html" class="headerlink">Time Tracking</a>
+            <a href="about.html" class="headerlink">About</a>
+            <a href="metric.html" class="headerlink">Metrics</a>
+        </div>
+        <h1 class="text">Metric Composition & Advanced Settings</h1>
+        <p class="text">In the advanced settings dialog of the configuration menu of AntiCopyPasterPython, 
+            you can customize the makeup of each of the four major metrics 
+            by which the plugin evaluates whether to extract a copied segment of code.</p>
+        <img src="../images/advancedsettings.png" class="imagecenter">
+        <h3 class="text">Customizing Metrics</h3>
+        <p class="text">
+            Each metric is really composed of a number of submetrics, which are precise quantifications of the code segment.
+            <br><br>
+            In this dialog, each submetric can be toggled on or off.
+            <br><br>
+            If a submetric is toggled off, then it will not be considered when comparing the greater metric to the determined threshold.
+            <br><br>
+            If a submetric is toggled on, it can also be marked as required or not required.
+            <br><br>
+            A required submetric must meet its respective threshold for the greater metric to trigger, 
+            while an unrequired submetric can trigger the greater metric but won't prevent it from triggering.
+        </p>
+
+        <h3 class="text">Multiple Dimensions</h3>
+
+        <p class="text">
+            Certain metrics have multiple dimensions.
+            <br><br>
+            For example, the Keywords Metric is composed of 62 submetrics. 
+            There are 35 keywords it can count towards the metric, and each keyword can be counted either in total or on a per-line basis.
+            <br><br>
+            In the advanced settings dialog, this is extracted into a total / per-line dimension, which has on/off and required/unrequired toggles 
+            for each measurement type, and a specific keyword dimension, which allows each keyword to be counted or disregarded individually.
+        </p>
+
+    </body>
+</html>
