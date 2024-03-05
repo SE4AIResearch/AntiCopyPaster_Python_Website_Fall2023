@@ -18,34 +18,32 @@
         <p class="text">In the advanced settings dialog of the configuration menu of AntiCopyPasterPython, 
             you can customize the makeup of each of the four major metrics 
             by which the plugin evaluates whether to extract a copied segment of code.</p>
-        <img src="../images/advancedsettings.png" style="width:50%; height:auto; margin-left:auto; margin-right:auto; align-self:center;">
+        <img src="../images/advancedsettings.png" style="width:50%; height:auto; margin-left:15%; margin-right:15%; align-self:center; display:block;">
         <h3 class="text">Customizing Metrics</h3>
-        <p class="text">Each metric is really composed of a number of submetrics, which are precise quantifications of the code segment.</p>
-
-        <ul class="text">
-            <li class="text">In this dialog, each submetric can be toggled on or off.
-                <ul>
-                    <li>If a submetric is toggled off, then it will not be considered when comparing the greater metric to the determined threshold.</li>
-                </ul>
-            </li>
-            <li class="text">If a submetric is toggled on, it can also be marked as required or not required.
-                <ul>
-                    <li>A required submetric must meet its respective threshold for the greater metric to trigger, 
-                        while an unrequired submetric can trigger the greater metric but won't prevent it from triggering.</li>
-                </ul>
-            </li>
-        </ul>
+        <p class="text">
+            Each metric is really composed of a number of submetrics, which are precise quantifications of the code segment.
+            <br><br>
+            In this dialog, each submetric can be toggled on or off.
+            <br><br>
+            If a submetric is toggled off, then it will not be considered when comparing the greater metric to the determined threshold.
+            <br><br>
+            If a submetric is toggled on, it can also be marked as required or not required.
+            <br><br>
+            A required submetric must meet its respective threshold for the greater metric to trigger, 
+            while an unrequired submetric can trigger the greater metric but won't prevent it from triggering.
+        </p>
 
         <h3 class="text">Multiple Dimensions</h3>
 
-        <p class="text">Certain metrics have multiple dimensions.</p>
-
-        <ul class="text">
-            <li class="text">For example, the Keywords Metric is composed of 62 submetrics. 
-                There are 35 keywords it can count towards the metric, and each keyword can be counted either in total or on a per-line basis.</li>
-            <li class="text">In the advanced settings dialog, this is extracted into a total / per-line dimension, which has on/off and required/unrequired toggles 
-                for each measurement type, and a specific keyword dimension, which allows each keyword to be counted or disregarded individually.</li>
-        </ul>
+        <p class="text">
+            Certain metrics have multiple dimensions.
+            <br><br>
+            For example, the Keywords Metric is composed of 62 submetrics. 
+            There are 35 keywords it can count towards the metric, and each keyword can be counted either in total or on a per-line basis.
+            <br><br>
+            In the advanced settings dialog, this is extracted into a total / per-line dimension, which has on/off and required/unrequired toggles 
+            for each measurement type, and a specific keyword dimension, which allows each keyword to be counted or disregarded individually.
+        </p>
 
     </body>
 </html>
