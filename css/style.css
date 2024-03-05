@@ -31,6 +31,13 @@
     color:#EEEEEE;
 }
 
+.imagecenter{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    width:50%;
+}
+
 iframe {
     display:block;
     margin: auto;
