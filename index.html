@@ -17,26 +17,18 @@
     <h1 class="text">Anti Copy Paster (Python) Fall 2023 Research</h1>
     <h3 class="text">This is the documentation site for our research to extend the functionality of PyCharm to include the AntiCopyPaster tool.</h3>
     <p class="text">
-      AntiCopyPaster is an open-source plugin for IntelliJ IDEA that automatically detects copied and pasted code and suggests
-      extracting that duplicate code into its own method.
+      We have developed Anti Copy Paste Plugin Python, a Python plugin which detects when the user copies and pastes 
+      a section of their own code and refactors the software to minimize repetition.
       <br><br>
-      Our task is to port the funcitonality of this plugin to IntelliJ PyCharm for Python.
+      So, given a set of parameters, the plugin determines if the pasted code should be flagged for refactoring, notifies the user
+      with the option to approve refactoring and then performs said refactoring by replacing duplicate code sections with calls 
+      to a newly created method. 
       <br><br>
-      The goal of this project is to create a Python plugin which detects when the user copies and pastes 
-      a section of their own code, and suggests refactoring to minimize repetition. 
-      Given a set of customizable parameters, the plugin will determine if the pasted code should be flagged for 
-      refactoring, notify and give the user the option to approve refactoring in a non-invasive manner, and finally execute said refactoring. 
+      This has been achieved through studying and adapting a Java based plugin for IntelliJ IDEA previously created by another group of Seniors.
+      Our plugin functions as a port of this plugin with major adaptations to recognize and refactor Python.
       <br><br>
-      A plugin with similar functionality called PyNose already exists within PyCharm, and we will use it as a basis for our project. 
-      PyNose can be used inside PyCharm to study the test smells of a certain project.
-      When you open a project in PyCharm, a number of inspections will be available.
-      <br><br>
-      One of the tools available is 'duplicate assert'. This will underline repeated assert statements
-      (two assert statements with the same parameters) and warn the user that this is bad coding practice.
-      We intend to use this duplication finder ultility as a starting point to search for code that is copied and pasted throughout the entire file.
-      <br><br>
-      This website will function both as a repository for information on our project's progress for the client to review, 
-      and as a source of information for any later groups who wish to further iterate on our plugin.
+      Alongside the plugin, the project involves the creation of this website which functions not only as a repository for information on our project for the client to review, 
+      but also as a source of information for any users experiencing issues as well as possible later groups who wish to further develop our plugin.
     </p>
     <!-- <script>
       function getDeliverables(){
